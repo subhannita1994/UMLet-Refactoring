@@ -1,0 +1,2 @@
+java -jar antlr-4.7.1-complete.jar -visitor -no-listener CSharpLexer.g4
+java -jar antlr-4.7.1-complete.jar -visitor -no-listener CSharpParser.g4

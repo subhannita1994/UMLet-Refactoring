@@ -1,0 +1,474 @@
+!SESSION 2019-02-24 18:56:29.833 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CA
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-24 18:56:29.843
+!MESSAGE Error reading configuration: ReliableFile is corrupt
+!STACK 0
+java.io.IOException: ReliableFile is corrupt
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFile.getInputStream(ReliableFile.java:338)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:95)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:69)
+	at org.eclipse.osgi.storagemanager.StorageManager.updateTable(StorageManager.java:490)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:711)
+	at org.eclipse.osgi.storage.Storage.getChildStorageManager(Storage.java:2068)
+	at org.eclipse.osgi.storage.Storage.getInfoInputStream(Storage.java:2085)
+	at org.eclipse.osgi.storage.Storage.<init>(Storage.java:240)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:175)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:72)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+!SESSION 2019-02-24 18:56:29.855 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CA
+
+!ENTRY org.eclipse.osgi 2 0 2019-02-24 18:56:29.855
+!MESSAGE The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+!STACK 0
+java.lang.IllegalArgumentException: The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+	at org.eclipse.osgi.internal.location.EquinoxLocations.<init>(EquinoxLocations.java:87)
+	at org.eclipse.osgi.internal.framework.EquinoxConfiguration.<init>(EquinoxConfiguration.java:538)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:67)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-24 18:56:29.857
+!MESSAGE Error reading configuration: ReliableFile is corrupt
+!STACK 0
+java.io.IOException: ReliableFile is corrupt
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFile.getInputStream(ReliableFile.java:338)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:95)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:69)
+	at org.eclipse.osgi.storagemanager.StorageManager.updateTable(StorageManager.java:490)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:711)
+	at org.eclipse.osgi.storage.Storage.getChildStorageManager(Storage.java:2068)
+	at org.eclipse.osgi.storage.Storage.getInfoInputStream(Storage.java:2085)
+	at org.eclipse.osgi.storage.Storage.<init>(Storage.java:240)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:175)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:72)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+!SESSION 2019-02-24 18:56:29.863 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CA
+
+!ENTRY org.eclipse.osgi 2 0 2019-02-24 18:56:29.863
+!MESSAGE The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+!STACK 0
+java.lang.IllegalArgumentException: The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+	at org.eclipse.osgi.internal.location.EquinoxLocations.<init>(EquinoxLocations.java:87)
+	at org.eclipse.osgi.internal.framework.EquinoxConfiguration.<init>(EquinoxConfiguration.java:538)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:67)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-24 18:56:29.865
+!MESSAGE Error reading configuration: ReliableFile is corrupt
+!STACK 0
+java.io.IOException: ReliableFile is corrupt
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFile.getInputStream(ReliableFile.java:338)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:95)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:69)
+	at org.eclipse.osgi.storagemanager.StorageManager.updateTable(StorageManager.java:490)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:711)
+	at org.eclipse.osgi.storage.Storage.getChildStorageManager(Storage.java:2068)
+	at org.eclipse.osgi.storage.Storage.getInfoInputStream(Storage.java:2085)
+	at org.eclipse.osgi.storage.Storage.<init>(Storage.java:240)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:175)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:72)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+!SESSION 2019-02-24 18:56:29.871 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CA
+
+!ENTRY org.eclipse.osgi 2 0 2019-02-24 18:56:29.871
+!MESSAGE The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+!STACK 0
+java.lang.IllegalArgumentException: The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+	at org.eclipse.osgi.internal.location.EquinoxLocations.<init>(EquinoxLocations.java:87)
+	at org.eclipse.osgi.internal.framework.EquinoxConfiguration.<init>(EquinoxConfiguration.java:538)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:67)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-24 18:56:29.874
+!MESSAGE Error reading configuration: ReliableFile is corrupt
+!STACK 0
+java.io.IOException: ReliableFile is corrupt
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFile.getInputStream(ReliableFile.java:338)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:95)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:69)
+	at org.eclipse.osgi.storagemanager.StorageManager.updateTable(StorageManager.java:490)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:711)
+	at org.eclipse.osgi.storage.Storage.getChildStorageManager(Storage.java:2068)
+	at org.eclipse.osgi.storage.Storage.getInfoInputStream(Storage.java:2085)
+	at org.eclipse.osgi.storage.Storage.<init>(Storage.java:240)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:175)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:72)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+!SESSION 2019-02-24 18:56:29.881 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CA
+
+!ENTRY org.eclipse.osgi 2 0 2019-02-24 18:56:29.881
+!MESSAGE The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+!STACK 0
+java.lang.IllegalArgumentException: The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+	at org.eclipse.osgi.internal.location.EquinoxLocations.<init>(EquinoxLocations.java:87)
+	at org.eclipse.osgi.internal.framework.EquinoxConfiguration.<init>(EquinoxConfiguration.java:538)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:67)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-24 18:56:29.883
+!MESSAGE Error reading configuration: ReliableFile is corrupt
+!STACK 0
+java.io.IOException: ReliableFile is corrupt
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFile.getInputStream(ReliableFile.java:338)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:95)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:69)
+	at org.eclipse.osgi.storagemanager.StorageManager.updateTable(StorageManager.java:490)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:711)
+	at org.eclipse.osgi.storage.Storage.getChildStorageManager(Storage.java:2068)
+	at org.eclipse.osgi.storage.Storage.getInfoInputStream(Storage.java:2085)
+	at org.eclipse.osgi.storage.Storage.<init>(Storage.java:240)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:175)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:72)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+!SESSION 2019-02-24 18:56:29.888 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CA
+
+!ENTRY org.eclipse.osgi 2 0 2019-02-24 18:56:29.888
+!MESSAGE The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+!STACK 0
+java.lang.IllegalArgumentException: The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+	at org.eclipse.osgi.internal.location.EquinoxLocations.<init>(EquinoxLocations.java:87)
+	at org.eclipse.osgi.internal.framework.EquinoxConfiguration.<init>(EquinoxConfiguration.java:538)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:67)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-24 18:56:29.890
+!MESSAGE Error reading configuration: ReliableFile is corrupt
+!STACK 0
+java.io.IOException: ReliableFile is corrupt
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFile.getInputStream(ReliableFile.java:338)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:95)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:69)
+	at org.eclipse.osgi.storagemanager.StorageManager.updateTable(StorageManager.java:490)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:711)
+	at org.eclipse.osgi.storage.Storage.getChildStorageManager(Storage.java:2068)
+	at org.eclipse.osgi.storage.Storage.getInfoInputStream(Storage.java:2085)
+	at org.eclipse.osgi.storage.Storage.<init>(Storage.java:240)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:175)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:72)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+!SESSION 2019-02-24 18:56:29.895 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CA
+
+!ENTRY org.eclipse.osgi 2 0 2019-02-24 18:56:29.895
+!MESSAGE The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+!STACK 0
+java.lang.IllegalArgumentException: The property 'osgi.configuration.area' with the value 'file:/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area/' is being overriden by the OSGi standard configuration property 'org.osgi.framework.storage' with the value '/Users/subhannitasarcar/git/ptidej-5/PADL Creator C++ (Eclipse) Helper/Configuration Area'.
+	at org.eclipse.osgi.internal.location.EquinoxLocations.<init>(EquinoxLocations.java:87)
+	at org.eclipse.osgi.internal.framework.EquinoxConfiguration.<init>(EquinoxConfiguration.java:538)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:67)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-24 18:56:29.897
+!MESSAGE Error reading configuration: ReliableFile is corrupt
+!STACK 0
+java.io.IOException: ReliableFile is corrupt
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFile.getInputStream(ReliableFile.java:338)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:95)
+	at org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream.<init>(ReliableFileInputStream.java:69)
+	at org.eclipse.osgi.storagemanager.StorageManager.updateTable(StorageManager.java:490)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:711)
+	at org.eclipse.osgi.storage.Storage.getChildStorageManager(Storage.java:2068)
+	at org.eclipse.osgi.storage.Storage.getInfoInputStream(Storage.java:2085)
+	at org.eclipse.osgi.storage.Storage.<init>(Storage.java:240)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:175)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:72)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at padl.creator.cppfile.eclipse.misc.EclipseCPPParserCaller.createCodeLevelModelUsingOSGiEmbedded(EclipseCPPParserCaller.java:123)
+	at padl.creator.cppfile.eclipse.CPPCreator.create(CPPCreator.java:28)
+	at padl.kernel.impl.CodeLevelModel.create(CodeLevelModel.java:41)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:287)
+	at padl.generator.helper.ModelGenerator.generateModelFromCppFilesUsingEclipse(ModelGenerator.java:268)
+	at pom.test.cppfile.general.TestQMOODMetrics.setUp(TestQMOODMetrics.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:124)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)

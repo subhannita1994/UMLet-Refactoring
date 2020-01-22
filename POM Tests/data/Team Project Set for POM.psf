@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.egit.core.GitProvider">
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,CPL"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,Java Parser"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,JCT"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,JCT Impl"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,JCT Tools"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,JCT Utils"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Analyses"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator AOL"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator AspectJ"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator C# v1"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator C# v2"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator C++"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator C++ (Eclipse)"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator C++ (Eclipse) CDT"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator C++ (Eclipse) Helper"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator ClassFile"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator JavaFile (Eclipse)"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator JavaFile (JavaC)"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Creator MSE"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Design Motifs"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Generator"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Statements"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Statements Creator AOL"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,PADL Statements Creator ClassFile"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,POM"/>
+<project reference="1.0,https://yann-gael@bitbucket.org/ptidejteam/ptidej-5.git,master,POM Tests"/>
+</provider>
+</psf>
